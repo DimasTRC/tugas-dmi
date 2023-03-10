@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+
+<body class="bg-light text-center">
+
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Tugas Konversi Jarak</h2>
+            <p class="lead">Berikut ini adalah kalkulator konversi jarak untuk pemenuhan tugas DMI.
+                <br>Dibuat menggunakan HTML, CSS, dan JS serta library Bootstrap dan Jquery.
+            </p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-8 mx-auto">
+
+
+                <div class="mb-3">
+                    <label for="num">Masukan Angka <span class="text-muted">(Harus Angka)</span></label>
+                    <input type="number" class="form-control" id="num" placeholder="12345" autofocus>
+                    <div class="invalid-feedback">
+                        Please enter a valid number.
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="op1">Konversi Dari</label>
+                        <select class="custom-select d-block w-100" id="op1" required>
+                            <option value="">Pilih...</option>
+                            <option value="1">Kilometer (km)</option>
+                            <option value="2">Hektometer (hm)</option>
+                            <option value="3">Dekameter (dam)</option>
+                            <option value="4">Meter (m)</option>
+                            <option value="5">Desimeter (dm)</option>
+                            <option value="6">Centimeter (cm)</option>
+                            <option value="7">Milimeter (mm)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="op2">Konversi Menjadi</label>
+                        <select class="custom-select d-block w-100" id="op2" required>
+                            <option value="">Pilih...</option>
+                            <option value="1">Kilometer (km)</option>
+                            <option value="2">Hektometer (hm)</option>
+                            <option value="3">Dekameter (dam)</option>
+                            <option value="4">Meter (m)</option>
+                            <option value="5">Desimeter (dm)</option>
+                            <option value="6">Centimeter (cm)</option>
+                            <option value="7">Milimeter (mm)</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr class="mb-4">
+                <button id="btnHitung" class="btn btn-primary btn-lg btn-block mb-4" type="submit">Tampilkan
+                    Hasilnya</button>
+
+                <hr class="mb-4">
+                <label for="num">Hasil Konversi</label>
+                <input type="num" id="hasil" class="form-control" placeholder="Hasil Akan Ditampilkan Disini" readonly>
+            </div>
+        </div>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2023 Muhammad Dimas Tricahyo - XII MM 1</p>
+        </footer>
+    </div>
+
+    <!-- ==================================================================== -->
+    <!-- <input type="number" id="num" placeholder="Masukan Angka">
+    <select id="op1">
+        <option value="">Konversi Dari</option>
+        <option value="1">Kilometer (km)</option>
+        <option value="2">Hektometer (hm)</option>
+        <option value="3">Dekameter (dam)</option>
+        <option value="4">Meter (m)</option>
+        <option value="5">Desimeter (dm)</option>
+        <option value="6">Centimeter (cm)</option>
+        <option value="7">Milimeter (mm)</option>
+    </select>
+    <select id="op2">
+        <option value="">Konversi Menjadi</option>
+        <option value="1">Kilometer (km)</option>
+        <option value="2">Hektometer (hm)</option>
+        <option value="3">Dekameter (dam)</option>
+        <option value="4">Meter (m)</option>
+        <option value="5">Desimeter (dm)</option>
+        <option value="6">Centimeter (cm)</option>
+        <option value="7">Milimeter (mm)</option>
+    </select>
+    <button id="btnHitung">Hitung</button>
+    <input type="number" id="hasil" placeholder="Hasil" readonly> -->
+
+    <script src="jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
